@@ -9,3 +9,5 @@ asciidoc:
     lab_name: "I'm the lab_name var"
     release-version: master
     page-pagination: true
+    virt_migration_collection_tarball_url: https://catalog-item-assets.s3.us-east-2.amazonaws.com/infra-openshift_virtualization_migration-1.21.1.tar.gz
+    virt_migration_assessment_jupyter_url: https://github.com/rhpds/vma-virt-analysis
