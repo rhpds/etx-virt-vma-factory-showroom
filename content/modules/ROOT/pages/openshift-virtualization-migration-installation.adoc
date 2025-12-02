@@ -28,7 +28,7 @@ Since Ansible is used to facilitate the deployment of the Ansible for OpenShift 
 
 ### Ansible Navigator
 
-link:https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/using_content_navigator/index[Ansible Navigator] is to used execute the Ansible automation as it simplifies how Ansible content is managed and used by leveraging Execution Environments which are container images which include all of the necessary dependencies and tools needed.
+link:https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/using_content_navigator/index[Ansible Navigator] is to used execute the Ansible automation as it simplifies how Ansible content is managed and used by leveraging Execution Environments which are container images which include all of the necessary dependencies and tools needed.
 
 Install Ansible Navigator by first creating a new Python Virtual Environment called `etx` within the `~/.virtualenvs` directory
 
