@@ -137,10 +137,10 @@ We have provided four pre-generated RVTools files from different vCenter environ
 
 Company "Acme, Inc." has 4 vCenters located in:
 
-* link:https://github.com/juliovp01/etx-virt_delivery/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/dallas.xlsx[Dallas Primary]
-* link:https://github.com/juliovp01/etx-virt_delivery/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/dallas1.xlsx[Dallas Secondary]
-* link:https://github.com/juliovp01/etx-virt_delivery/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/houston.xlsx[Houston]
-* link:https://github.com/juliovp01/etx-virt_delivery/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/ashburn.xlsx[Ashburn]
+* link:https://github.com/rhpds/etx-virt-vma-factory-showroom/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/dallas.xlsx[Dallas Primary]
+* link:https://github.com/rhpds/etx-virt-vma-factory-showroom/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/dallas1.xlsx[Dallas Secondary]
+* link:https://github.com/rhpds/etx-virt-vma-factory-showroom/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/houston.xlsx[Houston]
+* link:https://github.com/rhpds/etx-virt-vma-factory-showroom/raw/refs/heads/main/vma-rvtools-analysis/example_rvtools_files/ashburn.xlsx[Ashburn]
 
 [NOTE]
 ====
@@ -174,12 +174,12 @@ Please download these files to your laptop, as they will be required later in th
 [IMPORTANT]
 ====
 The tool and repo below are an export of a non-supported project, and are not maintained by Red Hat. It is provided as a reference for educational purposes only and could be used at Consulting engagements without any guarantees. The version of the code provided in this repository for the execution of this lab is not the latest version of the tool.
-If you are a Red Hatter, please check the latest version of the tool in the following internal GitLab repository: https://gitlab.cee.redhat.com/etx-virt-delivery/vma-rvtools-analysis[GitLab VMA RVTools Analysis].
+If you are a Red Hatter, please check the latest version of the tool in the following internal Git repository: https://github.com/rhpds/vma-virt-analysis[Git VMA RVTools Analysis].
 ====
 
 . Clone the Repository
 
-  git clone https://github.com/juliovp01/etx-virt_delivery.git
+  git clone https://github.com/rhpds/etx-virt-vma-factory-showroom.git
 
 . Navigate to the Project Directory
 

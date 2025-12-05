@@ -10,13 +10,13 @@ Many of the commands in this module use variable substitutions, which will ident
 ## Clone the GitOps repository
 
 To run this exercise we need to clone the course git repo.
-The course git repo is located at `https://github.com/juliovp01/etx-virt_delivery`.
+The course git repo is located at `https://github.com/rhpds/etx-virt-vma-factory-showroom`.
 
 Clone the repository to your  bastion VM.
 
 [source,console,subs="attributes"]
 ----
-$ git clone https://github.com/juliovp01/etx-virt_delivery
+$ git clone https://github.com/rhpds/etx-virt-vma-factory-showroom
 Cloning into 'etx-virt_delivery'...
 remote: Enumerating objects: 1300, done.
 remote: Counting objects: 100% (169/169), done.
@@ -68,7 +68,7 @@ Let's deploy the Argo CD instance. In this case we are going to deploy the defau
 
 [source,console,subs="attributes"]
 ----
-$ export gitops_repo=https://github.com/juliovp01/etx-virt_delivery.git
+$ export gitops_repo=https://github.com/rhpds/etx-virt-vma-factory-showroom.git
 
 $ export cluster_base_domain=$(oc get ingress.config.openshift.io cluster --template={{.spec.domain}} | sed -e "s/^apps.//")
 
