@@ -151,7 +151,7 @@ Please download these files to your laptop, as they will be required later in th
 
 === Setting the Environment
 
-===== PreRequisites
+==== PreRequisites
 
 .Linux/macOS Requirements
 * Ensure the following are installed:
@@ -169,7 +169,7 @@ Please download these files to your laptop, as they will be required later in th
 ** Visual Studio (Community Edition) (required for compiling dependencies)
 ** Rust (required for some Python dependencies)
 
-===== Setting Up the Environment
+==== Setting Up the Environment
 
 [IMPORTANT]
 ====
