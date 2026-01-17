@@ -4,6 +4,20 @@ The installation of Ansible for OpenShift Virtualization Migration configured ma
 
 As individual Migration Waves are defined and related applications are migrated into OpenShift, dedicated Projects/Namespaces are created to better organize and manage content. We saw this in prior exercises where a dedicated Project called `vmexamples` was used. To illustrate how the Ansible for OpenShift Virtualization Migration can be used to support migration activities, we will create a separate _Project_ where we can demonstrate the capabilities of the Ansible for OpenShift Virtualization Migration.
 
+== CHALLENGE: Push a image to the OpenShift registry
+
+On real scenarios environments it will be disconnected or cannot use a foreign registry, to represent this scenario, this lab has a challenge.
+
+For next sessions work as expected the container image on bastion should be present in OpenShift.
+
+So you need to figure out how to import it to OCP. 
+
+TIP: You can change your Ansible inventory, or expose the OpenShift registry or even deal with rbacs.
+
+The important is not to have the *ImagePullBackOff* error.
+
+TIP: If you give up read this [solution]https://access.redhat.com/solutions/6959306 
+
 == Creating a Dedicated Project for Automation
 
 Create a new Project called `vmexamples-automation` by navigating the OpenShift Web Console, expanding *Home* on the left hand navigation bar, and then selecting *Projects*.

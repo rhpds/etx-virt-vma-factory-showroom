@@ -47,7 +47,7 @@ On the *rhel9-tpl* use your right click and create a new VM from This template.
 
 image::Ansible-Migration-Install/create-vm.png[link=self, window=blank, width=100%]
 
-Select the your folder: {vcenter_vm_folder}, name the vm to *rhel9-to-be-migrated-1* and click next.
+Select the your folder: {vcenter_vm_folder}, name the vm to *rhel9-vma-superlab-1* and click next.
 
 image::Ansible-Migration-Install/vm-folder-select.png[link=self, window=blank, width=100%]
 
@@ -69,7 +69,7 @@ image::Ansible-Migration-Install/vm-new-device.png[link=self, window=blank, widt
 
 Finish the creation.
 
-IMPORTANT: Repeat this process more two times and name the vms as *rhel9-to-be-migrated-2* and *rhel9-to-be-migrated-3*.
+IMPORTANT: Repeat this process more two times and name the vms as *rhel9-vma-superlab-2* and *rhel9-vma-superlab-3*.
 
 
 
@@ -515,8 +515,8 @@ ansible-navigator run \
   --eei=quay.io/rhpds/openshift-virtualization-migration-ee-2.5:v9 \
   -m stdout \
   --pp=missing \
-  --eev=$OPENSHIFT_VIRTUALIZATION_MIGRATION_REPO:/runner/project:Z \
-  --eev=$OPENSHIFT_VIRTUALIZATION_MIGRATION_REPO:/usr/share/ansible/collections/ansible_collections/infra/openshift_virtualization_migration:Z \
+  --eev=$(pwd):/runner/project:Z \
+  --eev=$(pwd):/usr/share/ansible/collections/ansible_collections/infra/openshift_virtualization_migration:Z \
   playbooks/migration_factory_aap.yml \
   -i inventory-etx-base.yml \
   -i inventory-etx.yml \

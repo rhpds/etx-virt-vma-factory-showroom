@@ -13,7 +13,7 @@ all:
     git_password: <password>
 
     # VMware Credentials
-    vmware_host: <host>
+    vmware_host: <host> #Do not use HTTPS://
     vmware_username: <username>
     vmware_password: <password>
 
@@ -41,6 +41,8 @@ migration_spoke:
           image: "{{ mtv_vmware_vddk_init_image }}"
           username: "{{ container_username }}"
           password: "{{ container_password }}"
+        sdkEndpoint: /sdk
+        insecureSkipTlsVerify: true
         mapping:
           create: true
 ...

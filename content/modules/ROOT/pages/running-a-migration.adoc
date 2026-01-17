@@ -19,7 +19,7 @@ Since Virtual Machine migrations are a primary activity of any journey into Open
 
 A `mtv_migrate_migration_request` includes a variety of properties that incorporates required information to support the generation of MTV `Plan` resources, including _Providers_, _NetworkMaps_ and _StorageMaps_ as well as whether a migration should be started or staged for later. Most importantly, a set of VM's and or folders within VMware can be selected to enable the migration of multiple Virtual Machines with ease.
 
-To demonstrate how to migrate a set of Virtual Machines using the Ansible for OpenShift Virtualization Migration, we will select two Windows machines from VMware and migrate them to OpenShift. These machines are named `win2019-1` and `win2019-2` and are located in a directory associated with each student ID.
+To demonstrate how to migrate a set of Virtual Machines using the Ansible for OpenShift Virtualization Migration, we will select two Windows machines from VMware and migrate them to OpenShift. These machines are named `rhel9-vma-superlab-1` and `rhel9-vma-superlab-2` and are located in a directory associated with each student ID.
 
 The following `mtv_migrate_migration_request` can be used to represent how to migrate these Virtual Machines from VMware to OpenShift.
 
@@ -37,8 +37,8 @@ mtv_migrate_migration_request: # <1>
   plan_name: etx-migration # <10>
   start_migration: true # <11>
   vms: # <12>
-    - path: "/RS00/vm/ETX/student-<id>/win2019-1" # <13>
-    - path: "/RS00/vm/ETX/student-<id>/win2019-2"
+    - path: "/SDDC-Datacenter/vm/Workloads/sandbox-<GUID>/rhel9-vma-superlab-1" # <13>
+    - path: "/SDDC-Datacenter/vm/Workloads/sandbox-<GUID>/rhel9-vma-superlab-2"
 ----
 <1> Migration Request Variable
 <2> Name of the namespace that resources will be created within
@@ -52,7 +52,7 @@ mtv_migrate_migration_request: # <1>
 <10> Name to be associated with the `Plan`
 <11> Trigger the migration to begin immediately
 <12> List of Virtual Machines to include in the migration
-<13> Path in VMware containing the Virtual Machine to migrate. Replace `<id>` with your assigned student ID
+<13> Path in VMware containing the Virtual Machine to migrate. Replace `<GUID>` with your assigned student GUID
 
 Most of the fields in the request should be fairly straightforward. By default, the generated `Plan` resources are staged and migrations are not initiated. However, this can be modified to start the migration through automation using the `start_migration: true` property as included within this request.
 

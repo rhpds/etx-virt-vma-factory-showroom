@@ -174,18 +174,19 @@ mtv_migrate_migration_request:
   plan_name: etx-update-mac
   start_migration: true
   vms:
-    - path: "/RS00/vm/ETX/student-<ID>/rhel86"
-    - path: "/RS00/vm/ETX/student-<ID>/rhel93"
+    - path: "/SDDC-Datacenter/vm/Workloads/sandbox-<GUID>/rhel9-vma-superlab-1"
+    - path: "/SDDC-Datacenter/vm/Workloads/sandbox-<GUID>/rhel9-vma-superlab-2"
+
 ----
 
-Once again, be sure to update `<ID>` in the `vms` property with your student ID.
+Once again, be sure to update `<GUID>` in the `vms` property with your student ID.
 
 Perform the migration by running the playbook using `ansible-navigator` using the following command, running it from the root of the ETX git repository.
 
 [source,shell,role=execute]
 ----
 ansible-navigator run \
-  --eei=quay.io/redhat-cop/openshift-virtualization-migration-ee:2.5 \
+  --eei=quay.io/rhpds/openshift-virtualization-migration-ee-2.5:v9 \
   -m stdout \
   --pp=missing \
   --eev=$(pwd):/runner/project:Z \
@@ -199,19 +200,19 @@ ansible-navigator run \
 
 Monitor the execution of the playbook until it has completed successfully.
 
-Notice at the end of the playbook in the task `Update MAC Address`, the `rhel93` Virtual Machine was Updated:
+Notice at the end of the playbook in the task `Update MAC Address`, the `rhel9-vma-superlab-1` Virtual Machine was Updated:
 
 [source,shell]
 ----
 TASK [Update MAC Address] ****************************
-changed: [localhost] => (item=rhel93)
+changed: [localhost] => (item=rhel9-vma-superlab-1)
 ----
 
 Confirm the MAC address has been updated with the prefix specified by querying the manifest of the `Virtual Machine`
 
 [source,shell,role=execute]
 ----
-oc get vm -n vmexamples-automation rhel93 -o jsonpath='{ .spec.template.spec.domain.devices.interfaces[*].macAddress }'
+oc get vm -n vmexamples-automation rhel9-vma-superlab-1 -o jsonpath='{ .spec.template.spec.domain.devices.interfaces[*].macAddress }'
 ----
 
 As you can see, the MAC address has been updated to confirm with the expected range of OpenShift Virtualization addresses.
