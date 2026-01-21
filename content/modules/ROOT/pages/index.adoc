@@ -2,11 +2,20 @@
 
 Hello!
 
-Welcome to VMA and VMF SuperLab, it's super cool to have you joining us on this time.
+Welcome to Virtualization Migration Assessment and Virtualization Migration Factory SuperLab!
 
-Read all topics, pay attentions on the notes and tips and enjoy
+It's super cool to have you joining us on this time.
 
-NOTE: Those who read are always at an advantage.
+.Goals
+* Learn how to turn complex VMware migrations into your next big customer win.
+* Master the key foundational design and sizing considerations from the VMA.
+* Learn how to provision and execute the automated factory itself.
+
+You'll leave this session with the practical skills and confidence to de-risk projects, accelerate customer adoption, and successfully deliver large-scale transformations.
+
+Read all the topics, pay attention on the notes and tips and enjoy!
+
+NOTE: Those who read carefully are always at an advantage.
 
 Have fun!
 
