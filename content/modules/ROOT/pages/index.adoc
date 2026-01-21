@@ -19,19 +19,6 @@ NOTE: Those who read carefully are always at an advantage.
 
 Have fun!
 
-Bastion Node Public Hostname:: {bastion_public_hostname}
-Bastion Node SSH Password:: {bastion_ssh_password}
-Bastion Node SSH Port:: {bastion_ssh_port}
-Bastion SSH User Name:: {bastion_ssh_user_name}
-Lab GUID:: {guid}
-OpenShift API Server URL:: {openshift_api_server_url}
-OpenShift Cluster Admin Password:: {openshift_cluster_admin_password}
-OpenShift Admin Username:: {openshift_cluster_admin_username}
-OpenShift Console URL:: {openshift_cluster_console_url}
-OpenShift Cluster User:: {openshift_cluster_user_base}
-Gitea User:: {gitea_user}
-Gitea URL:: {gitea_console_url}
-Vcenter URL:: {vcenter_url}
-Vcenter User:: {vcenter_user_name}
-Vcenter Password:: {vcenter_password}
-Vcenter Folder:: {vcenter_vm_folder}
+Here's a list of the variables used in this lab:
+
+NOTE: You can find the list of all variables used in this lab in the xref:variables.adoc[Variables] page, which you can also find on the navigation bar at left.

@@ -6,3 +6,4 @@
 * xref:running-a-customized-migration.adoc[]
 * xref:VMs-and-gitops.adoc[]
 * xref:04_thanks.adoc[]
+* xref:variables.adoc[]
